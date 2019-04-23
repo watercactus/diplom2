@@ -1,4 +1,5 @@
 <header>
+<script type="text/javascript" src="/kostyascript"></script>	
 <h1>{{ .Site.Title }}</h1>
 {{ with .Site.Params.version }}
  <span class="version">Version {{ . }}</span>
@@ -9,4 +10,11 @@
 {{ with .Site.Params.description }}
 <p class="description">{{ . }}</p>
 {{end}}
+
+<div>
+	<!--<input type="text" id="Search">
+	<input type="button" onclick="javascript: FindOnPage('Search'); return false;" value="Поиск"/>-->
+	<input class="place_for_search" type="text" value="" placeholder="Поиск" autofocus="">
+	<input class="button_for_search"  type="button" value="Найти" onclick="javascript: FindOnPage('button_for_search',true); return false"  >
+</div>
 </header>

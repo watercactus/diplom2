@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="{{ .Page.Language | default "en" }}">
 <head>
 {{- partial "head.html" . -}}
@@ -13,10 +14,6 @@
 <main>
 {{- block "main" . -}}
 {{- end -}}
-<footer>
-{{- partial "main-footer.html" . -}}
-{{- partial "powered.html" . -}}
-</footer>
 </main>
 
 {{- partial "sidebar.html" . -}}
